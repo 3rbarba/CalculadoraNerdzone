@@ -1,0 +1,152 @@
+package Barb.CTD;
+
+import Barb.CTD.panel.*;
+
+import javax.swing.*;
+
+public class preco {
+
+    private static double precoBase;
+    private static double rankMultiplier;
+    private static double armaduraMultiplier;
+    private static double skillMultiplier;
+
+    public static double Precobase(String item) {
+        // Preço base do item
+        switch (item) {
+            case "MINERIO DE OURO |":
+                precoBase = 2.3;
+                break;
+            case "LINGOTE DE OURO |":
+                precoBase = 7.1;
+                break;
+            case "BLOCO DE OURO   |":
+                precoBase = 70.10;
+                break;
+            case "FUNGO           |":
+                precoBase = 2;
+                break;
+            case "FUNGO COMP.     |":
+                precoBase = 128;
+                break;
+            case "CACTO           |":
+                precoBase = 3.51;
+                break;
+            case "CACTO COMP.     |":
+                precoBase = 224.64;
+                break;
+            case "ABÓBORA         |":
+                precoBase = 40;
+                break;
+            case "ABÓBORA COMP.   |":
+                precoBase = 2560;
+                break;
+            default:
+                precoBase = 0;
+        }
+        return precoBase;
+    }
+
+    public static double RankBase(String rank) {
+        // Modificador de rank
+        switch (rank.toString()) {
+            case "AprendizI       |":
+                rankMultiplier = 0;
+                break;
+            case "AprendizII      |":
+                rankMultiplier = 10;
+                break;
+            case "AprendizIII     |":
+                rankMultiplier = 20;
+                break;
+            case "ExploradorI     |":
+                rankMultiplier = 30;
+                break;
+            case "ExploradorII    |":
+                rankMultiplier = 40;
+                break;
+            case "ExploradorIII   |":
+                rankMultiplier = 50;
+                break;
+            case "ConquistadorI   |":
+                rankMultiplier = 60;
+                break;
+            case "ConquistadorII  |":
+                rankMultiplier = 70;
+                break;
+            case "ConquistadorIII |":
+                rankMultiplier = 80;
+                break;
+            case "MestreI         |":
+                 rankMultiplier = 90;
+                 break;
+            case "MestreII        |":
+                 rankMultiplier = 100;
+                 break;
+            case "MestreIII       |":
+                 rankMultiplier = 110;
+                 break;
+            case "GuardiãoI       |":
+                rankMultiplier = 120;
+                break;
+            case "GuardiãoII      |":
+                rankMultiplier = 130;
+                break;
+            case "GuardiãoIII     |":
+                rankMultiplier = 140;
+                break;
+            default:
+                rankMultiplier = 0;
+        }
+        return rankMultiplier;
+    }
+
+    public static double armor(String capacete, String peitoral, String calca, String bota) {
+        double capaceteMultiplier = 1;
+        double peitoralMultiplier = 1;
+        double calcaMultiplier = 1;
+        double botaMultiplier = 1;
+        // Modificadores de armadura
+        if (capacete.contains("1.1x")) {
+            capaceteMultiplier = 1.1;
+        }
+        if (peitoral.contains("1.1x")) {
+            peitoralMultiplier = 1.1;
+        } else if (peitoral.contains("1.3x")) {
+            peitoralMultiplier = 1.3;
+        }
+        if (calca.contains("1.1x")) {
+            calcaMultiplier = 1.1;
+        } else if (calca.contains("1.3x")) {
+            calcaMultiplier = 1.3;
+        } else if (calca.contains("1.4x")) {
+            calcaMultiplier = 1.4;
+        }
+        if (bota.contains("1.1x")) {
+            botaMultiplier = 1.1;
+        } else if (bota.contains("1.3x")) {
+            botaMultiplier = 1.3;
+        }
+        armaduraMultiplier = capaceteMultiplier * peitoralMultiplier * calcaMultiplier * botaMultiplier;
+        return armaduraMultiplier;
+    }
+
+    public static double skill(String herbalismo, String mineracao) {
+        //modificadores de skills
+        if (herbalismo.equals("Herbalismo"))
+            skillMultiplier = 0;
+        if (herbalismo.equals("Mais de 300"))
+            skillMultiplier = 3;
+        if (mineracao.equals("Mineração"))
+            skillMultiplier = 0;
+        if (mineracao.equals("Mais de 250"))
+            skillMultiplier = 5;
+        if (mineracao.equals("Mais de 600"))
+            skillMultiplier = 7;
+        if (mineracao.equals("Mais de 1000"))
+            skillMultiplier = 10;
+
+        return skillMultiplier;
+    }
+}
+

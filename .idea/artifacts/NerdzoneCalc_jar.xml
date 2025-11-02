@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="NerdzoneCalc:jar">
+    <output-path>$USER_HOME$/Desktop</output-path>
+    <root id="archive" name="NerdzoneCalc.jar">
+      <element id="module-output" name="NerdzoneCalc" />
+    </root>
+  </artifact>
+</component>
