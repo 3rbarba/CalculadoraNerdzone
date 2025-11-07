@@ -1,9 +1,5 @@
 package Barb.CTD;
 
-import Barb.CTD.panel.*;
-
-import javax.swing.*;
-
 public class preco {
 
     private static double precoBase;
@@ -36,10 +32,10 @@ public class preco {
                 precoBase = 224.64;
                 break;
             case "ABÓBORA         |":
-                precoBase = 40;
+                precoBase = 80;
                 break;
             case "ABÓBORA COMP.   |":
-                precoBase = 2560;
+                precoBase = 5120;
                 break;
             default:
                 precoBase = 0;
@@ -78,14 +74,14 @@ public class preco {
                 rankMultiplier = 80;
                 break;
             case "MestreI         |":
-                 rankMultiplier = 90;
-                 break;
+                rankMultiplier = 90;
+                break;
             case "MestreII        |":
-                 rankMultiplier = 100;
-                 break;
+                rankMultiplier = 100;
+                break;
             case "MestreIII       |":
-                 rankMultiplier = 110;
-                 break;
+                rankMultiplier = 110;
+                break;
             case "GuardiãoI       |":
                 rankMultiplier = 120;
                 break;
@@ -102,30 +98,62 @@ public class preco {
     }
 
     public static double armor(String capacete, String peitoral, String calca, String bota) {
-        double capaceteMultiplier = 1;
-        double peitoralMultiplier = 1;
-        double calcaMultiplier = 1;
-        double botaMultiplier = 1;
+        double capaceteMultiplier;
+        double peitoralMultiplier;
+        double calcaMultiplier;
+        double botaMultiplier;
         // Modificadores de armadura
-        if (capacete.contains("1.1x")) {
-            capaceteMultiplier = 1.1;
+        switch (capacete.toString()){
+            case "Sem capacete":
+                capaceteMultiplier = 1;
+                break;
+            case "1.1x":
+                capaceteMultiplier = 1.1;
+                break;
+            default:
+                capaceteMultiplier = 1;
         }
-        if (peitoral.contains("1.1x")) {
-            peitoralMultiplier = 1.1;
-        } else if (peitoral.contains("1.3x")) {
-            peitoralMultiplier = 1.3;
+        switch (peitoral.toString()){
+            case "Sem peitoral":
+                peitoralMultiplier = 1;
+                break;
+            case "1.1x":
+                peitoralMultiplier = 1.1;
+                break;
+            case "1.3":
+                peitoralMultiplier = 1.3;
+                break;
+            default:
+                peitoralMultiplier = 1;
         }
-        if (calca.contains("1.1x")) {
-            calcaMultiplier = 1.1;
-        } else if (calca.contains("1.3x")) {
-            calcaMultiplier = 1.3;
-        } else if (calca.contains("1.4x")) {
-            calcaMultiplier = 1.4;
+        switch (calca.toString()){
+            case "Sem calça":
+                calcaMultiplier = 1;
+                break;
+            case "1.1x":
+                calcaMultiplier = 1.1;
+                break;
+            case "1.3x":
+                calcaMultiplier = 1.3;
+                break;
+            case "1.4x":
+                calcaMultiplier = 1.4;
+                break;
+            default:
+                calcaMultiplier = 1;
         }
-        if (bota.contains("1.1x")) {
-            botaMultiplier = 1.1;
-        } else if (bota.contains("1.3x")) {
-            botaMultiplier = 1.3;
+        switch (bota.toString()){
+            case "Sem bota":
+                botaMultiplier = 1;
+                break;
+            case "1.1x":
+                botaMultiplier = 1.1;
+                break;
+            case "1.3x":
+                botaMultiplier = 1.3;
+                break;
+            default:
+                botaMultiplier = 1;
         }
         armaduraMultiplier = capaceteMultiplier * peitoralMultiplier * calcaMultiplier * botaMultiplier;
         return armaduraMultiplier;
@@ -133,19 +161,35 @@ public class preco {
 
     public static double skill(String herbalismo, String mineracao) {
         //modificadores de skills
-        if (herbalismo.equals("Herbalismo"))
-            skillMultiplier = 0;
-        if (herbalismo.equals("Mais de 300"))
-            skillMultiplier = 3;
-        if (mineracao.equals("Mineração"))
-            skillMultiplier = 0;
-        if (mineracao.equals("Mais de 250"))
-            skillMultiplier = 5;
-        if (mineracao.equals("Mais de 600"))
-            skillMultiplier = 7;
-        if (mineracao.equals("Mais de 1000"))
-            skillMultiplier = 10;
-
+        double skillH = 0;
+        double skillM = 0;
+        switch (herbalismo.toString()) {
+            case "Herbalismo":
+                skillH = 0;
+                break;
+            case "Mais de 300":
+                skillH = 3;
+                break;
+            default:
+                skillH = 0;
+        }
+        switch (mineracao.toString()) {
+            case "Mineração":
+                skillM = 0;
+                break;
+            case "Mais de 250":
+                skillM += 5;
+                break;
+            case "Mais de 600":
+                skillM += 7;
+                break;
+            case "Mais de 1000":
+                skillM += 10;
+                break;
+            default:
+                skillM = 0;
+        }
+        skillMultiplier = skillM + skillH;
         return skillMultiplier;
     }
 }
