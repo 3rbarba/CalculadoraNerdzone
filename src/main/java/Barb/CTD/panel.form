@@ -24,7 +24,7 @@
           <focusable value="false"/>
           <font name="Arial Black" style="1"/>
           <requestFocusEnabled value="false"/>
-          <text value="CALCULADORA NERDZONE ORIGINS"/>
+          <text value="CALCULADORA NERDZONE LEGACY"/>
         </properties>
       </component>
       <component id="8a5c3" class="javax.swing.JTextArea" binding="ARMADURAtxt">
