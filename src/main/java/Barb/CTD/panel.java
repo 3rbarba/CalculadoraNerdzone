@@ -44,7 +44,7 @@ public class panel {
     }
 
     public void run() {
-        JFrame frame = new JFrame("Nerdzone Calc");
+        JFrame frame = new JFrame("Nerdzone Calculadora");
         frame.setContentPane(this.Calc);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
