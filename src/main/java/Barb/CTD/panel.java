@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import Barb.CTD.calcular.*;
+
 import static Barb.CTD.preco.*;
 
 public class panel {
@@ -17,6 +17,7 @@ public class panel {
     private JTextArea ranktxt;
     private JTextArea itemtxt;
     private JTextArea boostertxt;
+    private JTextArea QuantItenstxt;
     private JTextField Bolsa;
     private JTextField presidente;
     private JTextField booster;
@@ -30,6 +31,9 @@ public class panel {
     private JList rank;
     private JButton Calcular;
     private JTextPane Total;
+    private JRadioButton compButton;
+    private JTextField QuantItens;
+    private JRadioButton DesatreButton;
 
     private void createUIComponents() {
         Capacete = new JList();
@@ -61,29 +65,38 @@ public class panel {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
+                    if (getItem().contains("CABEÇA") && getCompButton()) {
+                        compButton.setSelected(false);
+                        JOptionPane.showMessageDialog(null, "Não ultilize essa opção para cabeças");
+                    }
                     double tot = calcular.calculo(Precobase(getItem()),
                             RankBase(getRank()),
                             armor(getCapacete(), getPeitoral(), getCalca(), getBota()),
                             skill(getHerbalismo(), getMineração()),
                             getBolsa(),
                             getPresidente(),
-                            getBooster());
+                            getBooster(), getCompButton());
                     double tot64x = tot * 64;
                     double tot2304x = tot * 2304;
 
                     String totF = String.format("%.2f", tot);
-                    String totF64 = String.format("%.2f" ,tot64x);
+                    String totF64 = String.format("%.2f", tot64x);
                     String totF2304x = String.format("%.2f", tot2304x);
+                    if (totF2304x.length() > 11){System.out.println(totF2304x.trim().chars());}
                     Total.setText("1x: " + totF + "  64x: " + totF64 + "  2304x: " + totF2304x);
-                    Total.setForeground(new Color(0, 0, 0));
-                } catch (NullPointerException err) {
+                    Total.setForeground(new Color(50, 205, 50));
+                    Total.setFont(new Font("Consolas", Font.BOLD, 12));
+
+
+                } catch (
+                        NullPointerException err) {
                     JOptionPane.showMessageDialog(null, "Erro ao calcular, verifique se todos os campos foram preenchidos corretamente.");
-                    Total.setForeground(new Color(255, 0, 0));
-                    Total.setText("   ");
-                }catch (NumberFormatException err){
+                } catch (
+                        NumberFormatException err) {
                     JOptionPane.showMessageDialog(null, "Digite apena números");
                     System.out.println(err);
                 }
+
             }
         });
     }
@@ -147,5 +160,14 @@ public class panel {
         return Booster;
     }
 
+    public boolean getCompButton() {
+        boolean compButton = this.compButton.isSelected();
+        return compButton;
+    }
+
+    public String getQuantItens() {
+        String quantItens = QuantItens.getText();
+        return quantItens;
+    }
 
 }

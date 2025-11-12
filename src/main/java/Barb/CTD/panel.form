@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Barb.CTD.panel">
-  <grid id="27dc6" binding="Calc" layout-manager="GridLayoutManager" row-count="18" column-count="13" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="Calc" layout-manager="GridLayoutManager" row-count="20" column-count="17" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="15" left="20" bottom="8" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="777" height="1359"/>
+      <xy x="20" y="20" width="868" height="1359"/>
     </constraints>
     <properties>
-      <background color="-7021569"/>
+      <background color="-5765889"/>
       <enabled value="false"/>
+      <focusCycleRoot value="true"/>
       <font name="Bahnschrift" size="20" style="1"/>
     </properties>
     <border type="none"/>
     <children>
       <component id="1d69d" class="javax.swing.JTextArea" binding="Titulotxt">
         <constraints>
-          <grid row="0" column="1" row-span="1" col-span="12" vsize-policy="6" hsize-policy="6" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="0" column="1" row-span="1" col-span="16" vsize-policy="6" hsize-policy="6" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <autoscrolls value="false"/>
-          <background color="-7021569"/>
+          <background color="-5765889"/>
           <editable value="false"/>
           <enabled value="true"/>
           <focusable value="false"/>
@@ -29,10 +30,10 @@
       </component>
       <component id="8a5c3" class="javax.swing.JTextArea" binding="ARMADURAtxt">
         <constraints>
-          <grid row="9" column="1" row-span="1" col-span="12" vsize-policy="6" hsize-policy="6" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="10" column="1" row-span="1" col-span="16" vsize-policy="6" hsize-policy="6" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <background color="-7021569"/>
+          <background color="-5765889"/>
           <editable value="false"/>
           <focusable value="false"/>
           <font name="Arial Black" style="1"/>
@@ -45,16 +46,17 @@
       </component>
       <component id="4ed77" class="javax.swing.JList" binding="Capacete" custom-create="true">
         <constraints>
-          <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+          <grid row="11" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <background color="-7021569"/>
+          <background color="-5765889"/>
           <focusable value="false"/>
           <font name="Consolas" size="12"/>
           <foreground color="-16777216"/>
           <model>
             <item value="Sem capacete"/>
             <item value="1.1x"/>
+            <item value="1.4x"/>
           </model>
           <selectionBackground color="-6875"/>
           <selectionForeground color="-11908534"/>
@@ -63,10 +65,10 @@
       </component>
       <component id="7bd" class="javax.swing.JTextArea" binding="ranktxt">
         <constraints>
-          <grid row="11" column="1" row-span="1" col-span="12" vsize-policy="6" hsize-policy="6" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="12" column="1" row-span="1" col-span="16" vsize-policy="6" hsize-policy="6" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <background color="-7021569"/>
+          <background color="-5765889"/>
           <editable value="false"/>
           <focusable value="false"/>
           <font name="Arial Black" style="1"/>
@@ -80,10 +82,10 @@
       </component>
       <component id="6edd5" class="javax.swing.JTextArea" binding="itemtxt">
         <constraints>
-          <grid row="7" column="1" row-span="1" col-span="12" vsize-policy="6" hsize-policy="6" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="7" column="1" row-span="1" col-span="16" vsize-policy="6" hsize-policy="6" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <background color="-7021569"/>
+          <background color="-5765889"/>
           <editable value="false"/>
           <focusable value="false"/>
           <font name="Arial Black" style="1"/>
@@ -96,11 +98,11 @@
       </component>
       <component id="1dd74" class="javax.swing.JList" binding="itemList">
         <constraints>
-          <grid row="8" column="1" row-span="1" col-span="3" vsize-policy="6" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="8" column="1" row-span="1" col-span="7" vsize-policy="6" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <autoscrolls value="false"/>
-          <background color="-7021569"/>
+          <background color="-5765889"/>
           <fixedCellHeight value="-1"/>
           <fixedCellWidth value="-1"/>
           <focusable value="false"/>
@@ -111,12 +113,16 @@
             <item value="MINERIO DE OURO |"/>
             <item value="LINGOTE DE OURO |"/>
             <item value="BLOCO DE OURO   |"/>
+            <item value="REDSTONE        |"/>
+            <item value="BLOCO DE RED.   |"/>
             <item value="FUNGO           |"/>
-            <item value="FUNGO COMP.     |"/>
             <item value="CACTO           |"/>
-            <item value="CACTO COMP.     |"/>
             <item value="ABÓBORA         |"/>
-            <item value="ABÓBORA COMP.   |"/>
+            <item value="CABEÇA DE GAL.  |"/>
+            <item value="CABEÇA DE PORCO |"/>
+            <item value="CABEÇA DE OVELHA|"/>
+            <item value="CABEÇA DE VACA  |"/>
+            <item value="CABEÇA DE ZUMBI |"/>
           </model>
           <name value=""/>
           <opaque value="false"/>
@@ -130,7 +136,7 @@
       </component>
       <component id="eda52" class="javax.swing.JTextField" binding="presidente" custom-create="true">
         <constraints>
-          <grid row="6" column="1" row-span="1" col-span="12" vsize-policy="0" hsize-policy="6" anchor="10" fill="0" indent="0" use-parent-layout="false">
+          <grid row="6" column="1" row-span="1" col-span="16" vsize-policy="0" hsize-policy="6" anchor="10" fill="0" indent="0" use-parent-layout="false">
             <minimum-size width="45" height="15"/>
           </grid>
         </constraints>
@@ -146,10 +152,10 @@
       </component>
       <component id="80ecb" class="javax.swing.JTextArea" binding="Skilltxt">
         <constraints>
-          <grid row="13" column="1" row-span="1" col-span="12" vsize-policy="6" hsize-policy="6" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="14" column="1" row-span="1" col-span="16" vsize-policy="6" hsize-policy="6" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <background color="-7021569"/>
+          <background color="-5765889"/>
           <editable value="false"/>
           <focusable value="false"/>
           <font name="Arial Black" style="1"/>
@@ -162,10 +168,10 @@
       </component>
       <component id="2eec0" class="javax.swing.JList" binding="herbalismo" custom-create="true">
         <constraints>
-          <grid row="14" column="1" row-span="1" col-span="3" vsize-policy="6" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="15" column="1" row-span="1" col-span="7" vsize-policy="6" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <background color="-7021569"/>
+          <background color="-5765889"/>
           <focusable value="false"/>
           <font name="Consolas" size="12"/>
           <foreground color="-16777216"/>
@@ -180,10 +186,10 @@
       </component>
       <component id="1f88c" class="javax.swing.JList" binding="rank">
         <constraints>
-          <grid row="12" column="1" row-span="1" col-span="12" vsize-policy="6" hsize-policy="2" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="13" column="1" row-span="1" col-span="16" vsize-policy="6" hsize-policy="2" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <background color="-7021569"/>
+          <background color="-5765889"/>
           <focusable value="false"/>
           <font name="Consolas" size="12"/>
           <foreground color="-16777216"/>
@@ -214,12 +220,13 @@
       </component>
       <component id="6a2a9" class="javax.swing.JTextArea" binding="bolsatxt">
         <constraints>
-          <grid row="1" column="1" row-span="1" col-span="12" vsize-policy="6" hsize-policy="6" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="1" column="1" row-span="1" col-span="16" vsize-policy="6" hsize-policy="6" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <autoscrolls value="true"/>
-          <background color="-7021569"/>
+          <background color="-5765889"/>
           <editable value="false"/>
+          <focusCycleRoot value="true"/>
           <focusable value="false"/>
           <font name="Arial Black" style="1"/>
           <foreground color="-1"/>
@@ -231,11 +238,12 @@
       </component>
       <component id="5d3b1" class="javax.swing.JTextArea" binding="presidentetxt">
         <constraints>
-          <grid row="5" column="1" row-span="1" col-span="12" vsize-policy="6" hsize-policy="6" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="5" column="1" row-span="1" col-span="16" vsize-policy="6" hsize-policy="6" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <background color="-7021569"/>
+          <background color="-5765889"/>
           <editable value="false"/>
+          <focusCycleRoot value="true"/>
           <focusable value="false"/>
           <font name="Arial Black" style="1"/>
           <foreground color="-1"/>
@@ -247,12 +255,12 @@
       </component>
       <vspacer id="59cf7">
         <constraints>
-          <grid row="11" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+          <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
         </constraints>
       </vspacer>
       <component id="33b0e" class="javax.swing.JTextField" binding="Bolsa">
         <constraints>
-          <grid row="2" column="1" row-span="1" col-span="12" vsize-policy="0" hsize-policy="6" anchor="10" fill="0" indent="0" use-parent-layout="false">
+          <grid row="2" column="1" row-span="1" col-span="16" vsize-policy="0" hsize-policy="6" anchor="10" fill="0" indent="0" use-parent-layout="false">
             <minimum-size width="45" height="15"/>
           </grid>
         </constraints>
@@ -268,11 +276,12 @@
       </component>
       <component id="73b68" class="javax.swing.JTextArea" binding="boostertxt">
         <constraints>
-          <grid row="3" column="1" row-span="1" col-span="12" vsize-policy="6" hsize-policy="6" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="3" column="1" row-span="1" col-span="16" vsize-policy="6" hsize-policy="6" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <background color="-7021569"/>
+          <background color="-5765889"/>
           <editable value="false"/>
+          <focusCycleRoot value="true"/>
           <focusable value="false"/>
           <font name="Arial Black" style="1"/>
           <foreground color="-1"/>
@@ -284,7 +293,7 @@
       </component>
       <component id="41b46" class="javax.swing.JTextField" binding="booster">
         <constraints>
-          <grid row="4" column="1" row-span="1" col-span="12" vsize-policy="0" hsize-policy="6" anchor="10" fill="0" indent="0" use-parent-layout="false">
+          <grid row="4" column="1" row-span="1" col-span="16" vsize-policy="0" hsize-policy="6" anchor="10" fill="0" indent="0" use-parent-layout="false">
             <minimum-size width="45" height="15"/>
           </grid>
         </constraints>
@@ -298,73 +307,12 @@
           <text value=""/>
         </properties>
       </component>
-      <component id="453ae" class="javax.swing.JList" binding="peitoral" custom-create="true">
-        <constraints>
-          <grid row="10" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <background color="-7021569"/>
-          <focusable value="false"/>
-          <font name="Consolas" size="12"/>
-          <foreground color="-16777216"/>
-          <layoutOrientation value="0"/>
-          <model>
-            <item value="Sem peitoral"/>
-            <item value="1.1x"/>
-            <item value="1.3x"/>
-          </model>
-          <selectionBackground color="-6875"/>
-          <selectionForeground color="-11908534"/>
-          <selectionMode value="0"/>
-        </properties>
-      </component>
-      <component id="acc25" class="javax.swing.JList" binding="Calca" custom-create="true">
-        <constraints>
-          <grid row="10" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <background color="-7021569"/>
-          <focusable value="false"/>
-          <font name="Consolas" size="12"/>
-          <foreground color="-16777216"/>
-          <layoutOrientation value="0"/>
-          <model>
-            <item value="Sem calça"/>
-            <item value="1.1x"/>
-            <item value="1.3x"/>
-            <item value="1.4x"/>
-          </model>
-          <selectionBackground color="-6875"/>
-          <selectionForeground color="-11908534"/>
-          <selectionMode value="0"/>
-        </properties>
-      </component>
-      <component id="40d76" class="javax.swing.JList" binding="bota" custom-create="true">
-        <constraints>
-          <grid row="10" column="4" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <background color="-7021569"/>
-          <focusable value="false"/>
-          <font name="Consolas" size="12"/>
-          <foreground color="-16777216"/>
-          <layoutOrientation value="0"/>
-          <model>
-            <item value="Sem bota"/>
-            <item value="1.1x"/>
-            <item value="1.3x"/>
-          </model>
-          <selectionBackground color="-6875"/>
-          <selectionForeground color="-11908534"/>
-          <selectionMode value="0"/>
-        </properties>
-      </component>
       <component id="fe3cd" class="javax.swing.JList" binding="Mineração" custom-create="true">
         <constraints>
-          <grid row="14" column="4" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="15" column="8" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <background color="-7021569"/>
+          <background color="-5765889"/>
           <focusable value="false"/>
           <font name="Consolas" size="12"/>
           <foreground color="-16777216"/>
@@ -377,11 +325,12 @@
           <selectionBackground color="-6875"/>
           <selectionForeground color="-11908534"/>
           <selectionMode value="0"/>
+          <valueIsAdjusting value="false"/>
         </properties>
       </component>
       <component id="8b4e5" class="javax.swing.JTextPane" binding="Total">
         <constraints>
-          <grid row="16" column="1" row-span="1" col-span="12" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <grid row="18" column="1" row-span="1" col-span="16" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <background color="-7021569"/>
@@ -400,12 +349,12 @@
       </component>
       <hspacer id="7440d">
         <constraints>
-          <grid row="15" column="1" row-span="1" col-span="3" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="17" column="1" row-span="1" col-span="7" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
       </hspacer>
       <component id="5bd8f" class="javax.swing.JButton" binding="Calcular">
         <constraints>
-          <grid row="17" column="12" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="6" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="19" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="5" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <background color="-7021569"/>
@@ -425,6 +374,121 @@
           <rolloverEnabled value="false"/>
           <selected value="false"/>
           <text value="CALCULAR"/>
+        </properties>
+      </component>
+      <component id="2c431" class="javax.swing.JRadioButton" binding="compButton">
+        <constraints>
+          <grid row="9" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-5765889"/>
+          <font name="Consolas" size="12" style="1"/>
+          <foreground color="-16777216"/>
+          <selected value="false"/>
+          <text value="COMPACTADO(A)"/>
+        </properties>
+      </component>
+      <component id="60ccc" class="javax.swing.JTextArea" binding="QuantItenstxt">
+        <constraints>
+          <grid row="16" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-5765889"/>
+          <editable value="false"/>
+          <focusable value="false"/>
+          <font name="Arial Black" style="1"/>
+          <foreground color="-1"/>
+          <lineWrap value="false"/>
+          <requestFocusEnabled value="false"/>
+          <text value="QUANTIDADE DE ITENS:"/>
+          <wrapStyleWord value="false"/>
+        </properties>
+      </component>
+      <component id="fb89d" class="javax.swing.JTextField" binding="QuantItens">
+        <constraints>
+          <grid row="16" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="9" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="45" height="15"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-1"/>
+          <columns value="0"/>
+          <editable value="true"/>
+          <enabled value="true"/>
+          <font name="Consolas" size="12"/>
+          <foreground color="-16777216"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="453ae" class="javax.swing.JList" binding="peitoral" custom-create="true">
+        <constraints>
+          <grid row="11" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <autoscrolls value="false"/>
+          <background color="-5765889"/>
+          <dragEnabled value="false"/>
+          <enabled value="true"/>
+          <focusable value="false"/>
+          <font name="Consolas" size="12"/>
+          <foreground color="-16777216"/>
+          <inheritsPopupMenu value="false"/>
+          <layoutOrientation value="0"/>
+          <model>
+            <item value="Sem peitoral"/>
+            <item value="1.1x"/>
+            <item value="1.3x"/>
+            <item value="1.4X"/>
+          </model>
+          <opaque value="false"/>
+          <requestFocusEnabled value="true"/>
+          <selectionBackground color="-6875"/>
+          <selectionForeground color="-11908534"/>
+          <selectionMode value="0"/>
+          <valueIsAdjusting value="false"/>
+          <verifyInputWhenFocusTarget value="true"/>
+        </properties>
+      </component>
+      <component id="acc25" class="javax.swing.JList" binding="Calca" custom-create="true">
+        <constraints>
+          <grid row="11" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-5765889"/>
+          <focusable value="false"/>
+          <font name="Consolas" size="12"/>
+          <foreground color="-16777216"/>
+          <layoutOrientation value="0"/>
+          <model>
+            <item value="Sem calça"/>
+            <item value="1.1x"/>
+            <item value="1.3x"/>
+            <item value="1.4x"/>
+          </model>
+          <selectionBackground color="-6875"/>
+          <selectionForeground color="-11908534"/>
+          <selectionMode value="0"/>
+        </properties>
+      </component>
+      <component id="40d76" class="javax.swing.JList" binding="bota" custom-create="true">
+        <constraints>
+          <grid row="11" column="4" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-5765889"/>
+          <dragEnabled value="true"/>
+          <focusable value="false"/>
+          <font name="Consolas" size="12"/>
+          <foreground color="-16777216"/>
+          <layoutOrientation value="0"/>
+          <model>
+            <item value="Sem bota"/>
+            <item value="1.1x"/>
+            <item value="1.3x"/>
+          </model>
+          <selectionBackground color="-6875"/>
+          <selectionForeground color="-11908534"/>
+          <selectionMode value="0"/>
         </properties>
       </component>
     </children>

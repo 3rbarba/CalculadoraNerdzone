@@ -11,13 +11,25 @@ public class preco {
         // Preço base do item
         switch (item) {
             case "MINERIO DE OURO |":
-                precoBase = 2.3;
+                precoBase = 3.0;
                 break;
             case "LINGOTE DE OURO |":
-                precoBase = 7.1;
+                precoBase = 9.2;
                 break;
             case "BLOCO DE OURO   |":
-                precoBase = 70.10;
+                precoBase = 91.3;
+                break;
+            case "OURO COMP.      |":
+                precoBase = 5843.2;
+                break;
+            case "REDSTONE        |":
+                precoBase = 3;
+                break;
+            case "BLOCO DE RED    |":
+                precoBase = 27;
+                break;
+            case "REDSTONE COMP.  |":
+                precoBase = 1728;
                 break;
             case "FUNGO           |":
                 precoBase = 2;
@@ -26,16 +38,31 @@ public class preco {
                 precoBase = 128;
                 break;
             case "CACTO           |":
-                precoBase = 3.51;
+                precoBase = 4.2;
                 break;
             case "CACTO COMP.     |":
-                precoBase = 224.64;
+                precoBase = 268.8;
                 break;
             case "ABÓBORA         |":
-                precoBase = 80;
+                precoBase = 120;
                 break;
             case "ABÓBORA COMP.   |":
-                precoBase = 5120;
+                precoBase = 7680;
+                break;
+            case "CABEÇA DE GAL.  |":
+                precoBase = 4;
+                break;
+            case "CABEÇA DE PORCO |":
+                precoBase = 8;
+                break;
+            case "CABEÇA DE OVELHA|":
+                precoBase = 9;
+                break;
+            case "CABEÇA DE VACA  |":
+                precoBase = 90;
+                break;
+            case "CABEÇA DE ZUMBI |":
+                precoBase = 300;
                 break;
             default:
                 precoBase = 0;
@@ -110,6 +137,9 @@ public class preco {
             case "1.1x":
                 capaceteMultiplier = 1.1;
                 break;
+            case "1.4x":
+                capaceteMultiplier = 1.3;
+                break;
             default:
                 capaceteMultiplier = 1;
         }
@@ -120,8 +150,11 @@ public class preco {
             case "1.1x":
                 peitoralMultiplier = 1.1;
                 break;
-            case "1.3":
+            case "1.3x":
                 peitoralMultiplier = 1.3;
+                break;
+            case "1.4X":
+                peitoralMultiplier = 1.4;
                 break;
             default:
                 peitoralMultiplier = 1;
