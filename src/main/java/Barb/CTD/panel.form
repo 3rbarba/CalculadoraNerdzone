@@ -44,7 +44,7 @@
           <wrapStyleWord value="false"/>
         </properties>
       </component>
-      <component id="4ed77" class="javax.swing.JList" binding="Capacete" custom-create="true">
+      <component id="4ed77" class="javax.swing.JList" binding="capacete" custom-create="true">
         <constraints>
           <grid row="11" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -258,7 +258,7 @@
           <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
         </constraints>
       </vspacer>
-      <component id="33b0e" class="javax.swing.JTextField" binding="Bolsa">
+      <component id="33b0e" class="javax.swing.JTextField" binding="bolsa">
         <constraints>
           <grid row="2" column="1" row-span="1" col-span="16" vsize-policy="0" hsize-policy="6" anchor="10" fill="0" indent="0" use-parent-layout="false">
             <minimum-size width="45" height="15"/>
@@ -307,7 +307,7 @@
           <text value=""/>
         </properties>
       </component>
-      <component id="fe3cd" class="javax.swing.JList" binding="Mineração" custom-create="true">
+      <component id="fe3cd" class="javax.swing.JList" binding="mineracao" custom-create="true">
         <constraints>
           <grid row="15" column="8" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -352,7 +352,7 @@
           <grid row="17" column="1" row-span="1" col-span="7" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
       </hspacer>
-      <component id="5bd8f" class="javax.swing.JButton" binding="Calcular">
+      <component id="5bd8f" class="javax.swing.JButton" binding="calcular">
         <constraints>
           <grid row="19" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="5" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -449,7 +449,7 @@
           <verifyInputWhenFocusTarget value="true"/>
         </properties>
       </component>
-      <component id="acc25" class="javax.swing.JList" binding="Calca" custom-create="true">
+      <component id="acc25" class="javax.swing.JList" binding="calca" custom-create="true">
         <constraints>
           <grid row="11" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>

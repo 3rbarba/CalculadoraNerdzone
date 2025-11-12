@@ -18,37 +18,35 @@ public class panel {
     private JTextArea itemtxt;
     private JTextArea boostertxt;
     private JTextArea QuantItenstxt;
-    private JTextField Bolsa;
+    private JTextField bolsa;
     private JTextField presidente;
     private JTextField booster;
-    private JList Capacete;
+    private JList capacete;
     private JList peitoral;
-    private JList Calca;
+    private JList calca;
     private JList bota;
     private JList herbalismo;
-    private JList Mineração;
+    private JList mineracao;
     private JList itemList;
     private JList rank;
-    private JButton Calcular;
+    private JButton calcular;
     private JTextPane Total;
     private JRadioButton compButton;
     private JTextField QuantItens;
-    private JRadioButton DesatreButton;
 
     private void createUIComponents() {
-        Capacete = new JList();
+        capacete = new JList();
         peitoral = new JList();
-        Calca = new JList();
+        calca = new JList();
         bota = new JList();
-        Bolsa = new JTextField();
+        bolsa = new JTextField();
         itemList = new JList();
         presidente = new JTextField();
         herbalismo = new JList();
-        Mineração = new JList();
+        mineracao = new JList();
     }
-
     public void run() {
-        JFrame frame = new JFrame("Nerdzone Calculadora");
+        JFrame frame = new JFrame("Calculadora Nerzone");
         frame.setContentPane(this.Calc);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
@@ -58,35 +56,28 @@ public class panel {
         ImageIcon imageIcon = new ImageIcon("src/main/resources/Icons/CalculatorPanel.png");
         frame.setIconImage(imageIcon.getImage());
         Botao();
+        init();
     }
 
     public void Botao() {
-        Calcular.addActionListener(new ActionListener() {
+        calcular.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
-                    if (getItem().contains("CABEÇA") && getCompButton()) {
-                        compButton.setSelected(false);
-                        JOptionPane.showMessageDialog(null, "Não ultilize essa opção para cabeças");
-                    }
-                    double tot = calcular.calculo(Precobase(getItem()),
+
+                    Controller.Verif(getItem(), getCompButton(), compButton, herbalismo, mineracao);
+                    double tot = Calculo.calculo(Precobase(getItem()),
                             RankBase(getRank()),
                             armor(getCapacete(), getPeitoral(), getCalca(), getBota()),
-                            skill(getHerbalismo(), getMineração()),
+                            skill(getHerbalismo(), getMineracao()),
                             getBolsa(),
                             getPresidente(),
-                            getBooster(), getCompButton());
-                    double tot64x = tot * 64;
-                    double tot2304x = tot * 2304;
-
-                    String totF = String.format("%.2f", tot);
-                    String totF64 = String.format("%.2f", tot64x);
-                    String totF2304x = String.format("%.2f", tot2304x);
-                    if (totF2304x.length() > 11){System.out.println(totF2304x.trim().chars());}
-                    Total.setText("1x: " + totF + "  64x: " + totF64 + "  2304x: " + totF2304x);
-                    Total.setForeground(new Color(50, 205, 50));
-                    Total.setFont(new Font("Consolas", Font.BOLD, 12));
-
+                            getBooster(), getCompButton(), String.valueOf(Controller.Quantitens(getQuantItens())));
+                    String totF = String.format("%.0f", tot);
+                    String Formattot = Controller.FormatTotal(totF, tot);
+                    Total.setText(Formattot);
+                    Total.setForeground(new Color(0, 0, 0));
+                    Total.setFont(new Font("Consolas", Font.BOLD, 20));
 
                 } catch (
                         NullPointerException err) {
@@ -101,10 +92,26 @@ public class panel {
         });
     }
 
+    public void init(){
+        bolsa.setText("0");
+        presidente.setText("0");
+        booster.setText("0");
+        QuantItens.setText("1");
+        capacete.setSelectedIndex(0);
+        peitoral.setSelectedIndex(0);
+        calca.setSelectedIndex(0);
+        bota.setSelectedIndex(0);
+        itemList.setSelectedIndex(0);
+        rank.setSelectedIndex(0);
+        herbalismo.setSelectedIndex(0);
+        mineracao.setSelectedIndex(0);
+        compButton.setSelected(false);
+    }
+
     public String getItem() {
         try {
             String item = itemList.getSelectedValue().toString();
-            return item;
+            return (item != null) ? item : null;
         } catch (NumberFormatException e) {
             return null;
         }
@@ -112,12 +119,12 @@ public class panel {
 
     public String getRank() {
         String Rank = rank.getSelectedValue().toString();
-        return Rank;
+        return (Rank != null) ? Rank.toString() : "";
     }
 
     public String getCapacete() {
-        String capacete = Capacete.getSelectedValue().toString();
-        return capacete;
+        String Capacete = capacete.getSelectedValue().toString();
+        return Capacete;
     }
 
     public String getPeitoral() {
@@ -126,8 +133,8 @@ public class panel {
     }
 
     public String getCalca() {
-        String calca = Calca.getSelectedValue().toString();
-        return calca;
+        String Calca = calca.getSelectedValue().toString();
+        return Calca;
     }
 
     public String getBota() {
@@ -140,9 +147,9 @@ public class panel {
         return Herbalismo;
     }
 
-    public String getMineração() {
-        String mineração = Mineração.getSelectedValue().toString();
-        return mineração;
+    public String getMineracao() {
+        String Mineracao = mineracao.getSelectedValue().toString();
+        return Mineracao;
     }
 
     public String getPresidente() {
@@ -151,8 +158,8 @@ public class panel {
     }
 
     public String getBolsa() {
-        String bolsa = Bolsa.getText();
-        return bolsa;
+        String Bolsa = bolsa.getText();
+        return Bolsa;
     }
 
     public String getBooster() {
@@ -161,13 +168,13 @@ public class panel {
     }
 
     public boolean getCompButton() {
-        boolean compButton = this.compButton.isSelected();
-        return compButton;
+        boolean CompButton = compButton.isSelected();
+        return CompButton;
     }
 
     public String getQuantItens() {
         String quantItens = QuantItens.getText();
-        return quantItens;
+        return (quantItens != null) ? quantItens : "";
     }
 
 }

@@ -1,7 +1,0 @@
-.gitignore
-/.idea
-/.mvn
-/target
-/src/test
-pom.xml
-NerdzoneCalc.iml

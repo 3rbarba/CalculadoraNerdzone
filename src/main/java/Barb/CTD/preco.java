@@ -11,58 +11,47 @@ public class preco {
         // Preço base do item
         switch (item) {
             case "MINERIO DE OURO |":
-                precoBase = 3.0;
+                precoBase = 4.5;
                 break;
             case "LINGOTE DE OURO |":
-                precoBase = 9.2;
+                precoBase = 18.4;
                 break;
+                //Bloco é *1.1027
             case "BLOCO DE OURO   |":
-                precoBase = 91.3;
+                precoBase =182.6;
                 break;
             case "OURO COMP.      |":
                 precoBase = 5843.2;
                 break;
             case "REDSTONE        |":
-                precoBase = 3;
+                precoBase = 4.5;
                 break;
             case "BLOCO DE RED    |":
                 precoBase = 27;
                 break;
-            case "REDSTONE COMP.  |":
-                precoBase = 1728;
-                break;
             case "FUNGO           |":
-                precoBase = 2;
-                break;
-            case "FUNGO COMP.     |":
-                precoBase = 128;
+                precoBase = 3;
                 break;
             case "CACTO           |":
                 precoBase = 4.2;
                 break;
-            case "CACTO COMP.     |":
-                precoBase = 268.8;
-                break;
             case "ABÓBORA         |":
-                precoBase = 120;
-                break;
-            case "ABÓBORA COMP.   |":
-                precoBase = 7680;
+                precoBase = 180;
                 break;
             case "CABEÇA DE GAL.  |":
                 precoBase = 4;
                 break;
             case "CABEÇA DE PORCO |":
-                precoBase = 8;
+                precoBase = 16;
                 break;
             case "CABEÇA DE OVELHA|":
-                precoBase = 9;
+                precoBase = 25;
                 break;
             case "CABEÇA DE VACA  |":
-                precoBase = 90;
+                precoBase = 180;
                 break;
             case "CABEÇA DE ZUMBI |":
-                precoBase = 300;
+                precoBase = 1000;
                 break;
             default:
                 precoBase = 0;
