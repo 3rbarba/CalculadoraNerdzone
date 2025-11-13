@@ -1,5 +1,5 @@
 
-![img.png](imgs/calculadora.png)
+![img.png](imgs/calculator.png)
 ![erroCompCabeca.png](imgs/erroCompCabeca.png)
 ![erroCompItem.png](imgs/erroCompItem.png)
 ![erroCompItem.png](imgs/erroCompItem.png)
