@@ -110,27 +110,23 @@ public class Controller {
 
 
     public static String FormatTotal(String total, double totD) {
-        int length = total.length();
+        String integerPart = String.valueOf((long) totD);
+        int length = integerPart.length();
+
         if (length < 4) {
-            total = String.format("%.2f", totD);
-            return total;
+            return String.format("%.2f", totD).replace(',', '.');
         }
 
-        int suffixIndex = (length - 1) / 4;
+        int suffixIndex = (length - 1) / 3 - 1;
 
         if (suffixIndex >= SUFIXOS.length) {
-            return total;
+            return integerPart;
         }
 
         String sufixo = SUFIXOS[suffixIndex];
 
-        int numCharsToTake = length % 3;
-        if (numCharsToTake == 0) {
-            numCharsToTake = 3;
-        }
+        int numCharsToTake = (length - 1) % 3 + 1;
 
-        total = total.substring(0, numCharsToTake) + sufixo;
-
-        return total;
+        return integerPart.substring(0, numCharsToTake) + sufixo;
     }
 }
