@@ -1,5 +1,5 @@
 
-![img.png](imgs/img.png)
+![img.png](imgs/calculadora.png)
 ![erroCompCabeca.png](imgs/erroCompCabeca.png)
 ![erroCompItem.png](imgs/erroCompItem.png)
 ![erroCompItem.png](imgs/erroCompItem.png)
@@ -11,4 +11,4 @@ Bom, eu estou disponibilizando o codigo fonte caso queira analisar, melhorar ou 
 
 Irei disponibilizar o arquivo para baixar logo a baixo.
 
-**ARQUIVO JÁ COMPILADO** [clique aqui para baixar](NerdzoneCalc.jar)
+**ARQUIVO JÁ COMPILADO** [clique aqui para baixar](NerdCalc.jar)
