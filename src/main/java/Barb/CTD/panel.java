@@ -46,7 +46,7 @@ public class panel {
         mineracao = new JList();
     }
     public void run() {
-        JFrame frame = new JFrame("Calculadora Nerzone");
+        JFrame frame = new JFrame("Calculadora Nerdzone");
         frame.setContentPane(this.Calc);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
@@ -56,7 +56,6 @@ public class panel {
         ImageIcon imageIcon = new ImageIcon("src/main/resources/Icons/CalculatorPanel.png");
         frame.setIconImage(imageIcon.getImage());
         Botao();
-        init();
     }
 
     public void Botao() {
@@ -65,7 +64,7 @@ public class panel {
             public void actionPerformed(ActionEvent e) {
                 try {
 
-                    Controller.Verif(getItem(), getCompButton(), compButton, herbalismo, mineracao);
+                    Controller.Verif(getItem(), getCompButton(), compButton, herbalismo, mineracao, presidente, rank);
                     double tot = Calculo.calculo(Precobase(getItem()),
                             RankBase(getRank()),
                             armor(getCapacete(), getPeitoral(), getCalca(), getBota()),
@@ -90,22 +89,6 @@ public class panel {
 
             }
         });
-    }
-
-    public void init(){
-        bolsa.setText("0");
-        presidente.setText("0");
-        booster.setText("0");
-        QuantItens.setText("1");
-        capacete.setSelectedIndex(0);
-        peitoral.setSelectedIndex(0);
-        calca.setSelectedIndex(0);
-        bota.setSelectedIndex(0);
-        itemList.setSelectedIndex(0);
-        rank.setSelectedIndex(0);
-        herbalismo.setSelectedIndex(0);
-        mineracao.setSelectedIndex(0);
-        compButton.setSelected(false);
     }
 
     public String getItem() {

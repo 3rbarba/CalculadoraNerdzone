@@ -4,13 +4,17 @@ import javax.swing.*;
 
 public class Controller {
 
-    public static String Verif(String item, boolean button, JRadioButton compButton, JList herbalismo, JList mineracao) {
+    public static String Verif(String item, boolean button, JRadioButton compButton, JList herbalismo, JList mineracao, JTextField presida, JList rank) {
         String result = "";
         if (item.contains("CABEÇA")) {
-            herbalismo.setSelectedValue(1, true);
-            mineracao.setSelectedValue(1, true);
+            herbalismo.setSelectedIndex(0);
+            mineracao.setSelectedIndex(0);
             mineracao.setVisible(false);
             herbalismo.setVisible(false);
+            presida.setText("0");
+            presida.disable();
+            rank.setSelectedIndex(0);
+            rank.disable();
             if (button) {
                 compButton.setSelected(false);
                 JOptionPane.showMessageDialog(null, "Não ultilize essa opção para cabeças");
@@ -27,16 +31,20 @@ public class Controller {
 
         for (String s : miner) {
             if (item.contains(s)) {
-                herbalismo.setSelectedIndex(1);
+                herbalismo.setSelectedIndex(0);
                 mineracao.setVisible(true);
                 herbalismo.setVisible(false);
+                rank.enable();
+                presida.enable();
             }
         }
         for (String s : herba) {
             if (item.contains(s)) {
-                mineracao.setSelectedIndex(1);
+                mineracao.setSelectedIndex(0);
                 herbalismo.setVisible(true);
                 mineracao.setVisible(false);
+                rank.enable();
+                presida.enable();
             }
         }
 
@@ -108,7 +116,7 @@ public class Controller {
             return total;
         }
 
-        int suffixIndex = (length - 1) / 3;
+        int suffixIndex = (length - 1) / 4;
 
         if (suffixIndex >= SUFIXOS.length) {
             return total;

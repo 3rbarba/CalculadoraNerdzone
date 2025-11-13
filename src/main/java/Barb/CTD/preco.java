@@ -11,14 +11,14 @@ public class preco {
         // Preço base do item
         switch (item) {
             case "MINERIO DE OURO |":
-                precoBase = 4.5;
+                precoBase = 6;
                 break;
             case "LINGOTE DE OURO |":
                 precoBase = 18.4;
                 break;
-                //Bloco é *1.1027
+                //Bloco é *1.103
             case "BLOCO DE OURO   |":
-                precoBase =182.6;
+                precoBase =182.65;
                 break;
             case "OURO COMP.      |":
                 precoBase = 5843.2;

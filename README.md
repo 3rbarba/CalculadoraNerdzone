@@ -1,5 +1,11 @@
-![img.png](imgs/img.png)
 
+![img.png](imgs/img.png)
+![erroCompCabeca.png](imgs/erroCompCabeca.png)
+![erroCompItem.png](imgs/erroCompItem.png)
+![erroCompItem.png](imgs/erroCompItem.png)
+![erroCompCabeca.png](imgs/erroCompCabeca.png)
+
+Na opção "QUANTIDADE DE ITENS" você pode ditar "bau" ou "inv". Também pode abreviar... K para mil, M para milhão, B para bilhão, T para trilhão, entre outros.
 
 Bom, eu estou disponibilizando o codigo fonte caso queira analisar, melhorar ou observar
 
