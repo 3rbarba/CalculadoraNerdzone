@@ -24,35 +24,38 @@ public class preco {
                 precoBase = 5843.2;
                 break;
             case "REDSTONE        |":
-                precoBase = 4.5;
+                precoBase = 6.75;
                 break;
             case "BLOCO DE RED    |":
-                precoBase = 27;
+                precoBase = 60.75;
                 break;
             case "FUNGO           |":
                 precoBase = 3;
                 break;
             case "CACTO           |":
-                precoBase = 4.2;
+                precoBase = 10.5;
                 break;
             case "ABÓBORA         |":
                 precoBase = 180;
+                break;
+            case "CACAU           |":
+                precoBase = 10;
                 break;
             case "CABEÇA DE GAL.  |":
                 precoBase = 4;
                 break;
             case "CABEÇA DE PORCO |":
-                precoBase = 16;
+                precoBase = 26;
                 break;
             case "CABEÇA DE OVELHA|":
-                precoBase = 25;
+                precoBase = 45;
                 break;
             case "CABEÇA DE VACA  |":
-                precoBase = 180;
+                precoBase = 270;
                 break;
             case "CABEÇA DE ZUMBI |":
-                precoBase = 1000;
-                break;
+                precoBase = 3000;
+            break;
             default:
                 precoBase = 0;
         }
@@ -173,6 +176,9 @@ public class preco {
                 break;
             case "1.3x":
                 botaMultiplier = 1.3;
+                break;
+            case "1.4x":
+                botaMultiplier = 1.4;
                 break;
             default:
                 botaMultiplier = 1;

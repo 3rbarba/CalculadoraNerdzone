@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Barb.CTD.panel">
-  <grid id="27dc6" binding="Calc" layout-manager="GridLayoutManager" row-count="20" column-count="19" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="Calc" layout-manager="GridLayoutManager" row-count="22" column-count="31" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="15" left="20" bottom="8" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="868" height="1359"/>
+      <xy x="20" y="20" width="1119" height="1359"/>
     </constraints>
     <properties>
       <background color="-5765889"/>
@@ -15,7 +15,7 @@
     <children>
       <component id="1d69d" class="javax.swing.JTextArea" binding="Titulotxt">
         <constraints>
-          <grid row="0" column="1" row-span="1" col-span="18" vsize-policy="6" hsize-policy="6" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="0" column="1" row-span="1" col-span="30" vsize-policy="6" hsize-policy="6" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <autoscrolls value="false"/>
@@ -30,7 +30,7 @@
       </component>
       <component id="8a5c3" class="javax.swing.JTextArea" binding="ARMADURAtxt">
         <constraints>
-          <grid row="10" column="1" row-span="1" col-span="18" vsize-policy="6" hsize-policy="6" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="10" column="1" row-span="1" col-span="30" vsize-policy="6" hsize-policy="6" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <background color="-5765889"/>
@@ -65,7 +65,7 @@
       </component>
       <component id="7bd" class="javax.swing.JTextArea" binding="ranktxt">
         <constraints>
-          <grid row="12" column="1" row-span="1" col-span="18" vsize-policy="6" hsize-policy="6" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="12" column="1" row-span="1" col-span="30" vsize-policy="6" hsize-policy="6" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <background color="-5765889"/>
@@ -82,7 +82,7 @@
       </component>
       <component id="6edd5" class="javax.swing.JTextArea" binding="itemtxt">
         <constraints>
-          <grid row="7" column="1" row-span="1" col-span="18" vsize-policy="6" hsize-policy="6" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="7" column="1" row-span="1" col-span="30" vsize-policy="6" hsize-policy="6" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <background color="-5765889"/>
@@ -98,7 +98,7 @@
       </component>
       <component id="1dd74" class="javax.swing.JList" binding="itemList">
         <constraints>
-          <grid row="8" column="1" row-span="1" col-span="9" vsize-policy="6" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="8" column="1" row-span="1" col-span="21" vsize-policy="6" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <autoscrolls value="false"/>
@@ -118,6 +118,7 @@
             <item value="FUNGO           |"/>
             <item value="CACTO           |"/>
             <item value="ABÓBORA         |"/>
+            <item value="CACAU           |"/>
             <item value="CABEÇA DE GAL.  |"/>
             <item value="CABEÇA DE PORCO |"/>
             <item value="CABEÇA DE OVELHA|"/>
@@ -136,7 +137,7 @@
       </component>
       <component id="eda52" class="javax.swing.JTextField" binding="presidente" custom-create="true">
         <constraints>
-          <grid row="6" column="1" row-span="1" col-span="18" vsize-policy="0" hsize-policy="6" anchor="10" fill="0" indent="0" use-parent-layout="false">
+          <grid row="6" column="1" row-span="1" col-span="30" vsize-policy="0" hsize-policy="6" anchor="10" fill="0" indent="0" use-parent-layout="false">
             <minimum-size width="45" height="15"/>
           </grid>
         </constraints>
@@ -152,7 +153,7 @@
       </component>
       <component id="80ecb" class="javax.swing.JTextArea" binding="Skilltxt">
         <constraints>
-          <grid row="14" column="1" row-span="1" col-span="18" vsize-policy="6" hsize-policy="6" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="14" column="1" row-span="1" col-span="30" vsize-policy="6" hsize-policy="6" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <background color="-5765889"/>
@@ -168,7 +169,7 @@
       </component>
       <component id="2eec0" class="javax.swing.JList" binding="herbalismo" custom-create="true">
         <constraints>
-          <grid row="15" column="1" row-span="1" col-span="9" vsize-policy="6" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="15" column="1" row-span="1" col-span="17" vsize-policy="6" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <background color="-5765889"/>
@@ -186,7 +187,7 @@
       </component>
       <component id="1f88c" class="javax.swing.JList" binding="rank">
         <constraints>
-          <grid row="13" column="1" row-span="1" col-span="18" vsize-policy="6" hsize-policy="2" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="13" column="1" row-span="1" col-span="30" vsize-policy="6" hsize-policy="2" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <background color="-5765889"/>
@@ -220,7 +221,7 @@
       </component>
       <component id="6a2a9" class="javax.swing.JTextArea" binding="bolsatxt">
         <constraints>
-          <grid row="1" column="1" row-span="1" col-span="18" vsize-policy="6" hsize-policy="6" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="1" column="1" row-span="1" col-span="30" vsize-policy="6" hsize-policy="6" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <autoscrolls value="true"/>
@@ -238,7 +239,7 @@
       </component>
       <component id="5d3b1" class="javax.swing.JTextArea" binding="presidentetxt">
         <constraints>
-          <grid row="5" column="1" row-span="1" col-span="18" vsize-policy="6" hsize-policy="6" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="5" column="1" row-span="1" col-span="30" vsize-policy="6" hsize-policy="6" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <background color="-5765889"/>
@@ -260,7 +261,7 @@
       </vspacer>
       <component id="33b0e" class="javax.swing.JTextField" binding="bolsa">
         <constraints>
-          <grid row="2" column="1" row-span="1" col-span="18" vsize-policy="0" hsize-policy="6" anchor="10" fill="0" indent="0" use-parent-layout="false">
+          <grid row="2" column="1" row-span="1" col-span="30" vsize-policy="0" hsize-policy="6" anchor="10" fill="0" indent="0" use-parent-layout="false">
             <minimum-size width="45" height="15"/>
           </grid>
         </constraints>
@@ -276,7 +277,7 @@
       </component>
       <component id="73b68" class="javax.swing.JTextArea" binding="boostertxt">
         <constraints>
-          <grid row="3" column="1" row-span="1" col-span="18" vsize-policy="6" hsize-policy="6" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="3" column="1" row-span="1" col-span="30" vsize-policy="6" hsize-policy="6" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <background color="-5765889"/>
@@ -293,7 +294,7 @@
       </component>
       <component id="41b46" class="javax.swing.JTextField" binding="booster">
         <constraints>
-          <grid row="4" column="1" row-span="1" col-span="18" vsize-policy="0" hsize-policy="6" anchor="10" fill="0" indent="0" use-parent-layout="false">
+          <grid row="4" column="1" row-span="1" col-span="30" vsize-policy="0" hsize-policy="6" anchor="10" fill="0" indent="0" use-parent-layout="false">
             <minimum-size width="45" height="15"/>
           </grid>
         </constraints>
@@ -307,30 +308,9 @@
           <text value=""/>
         </properties>
       </component>
-      <component id="fe3cd" class="javax.swing.JList" binding="mineracao" custom-create="true">
-        <constraints>
-          <grid row="15" column="10" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <background color="-5765889"/>
-          <focusable value="false"/>
-          <font name="Consolas" size="12"/>
-          <foreground color="-16777216"/>
-          <model>
-            <item value="Mineração"/>
-            <item value="Mais de 250"/>
-            <item value="Mais de 600"/>
-            <item value="Mais de 1000"/>
-          </model>
-          <selectionBackground color="-6875"/>
-          <selectionForeground color="-11908534"/>
-          <selectionMode value="0"/>
-          <valueIsAdjusting value="false"/>
-        </properties>
-      </component>
       <component id="8b4e5" class="javax.swing.JTextPane" binding="Total">
         <constraints>
-          <grid row="18" column="1" row-span="1" col-span="18" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <grid row="20" column="1" row-span="1" col-span="30" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <background color="-7021569"/>
@@ -349,36 +329,12 @@
       </component>
       <hspacer id="7440d">
         <constraints>
-          <grid row="17" column="1" row-span="1" col-span="9" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="19" column="1" row-span="1" col-span="21" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
       </hspacer>
-      <component id="5bd8f" class="javax.swing.JButton" binding="calcular">
-        <constraints>
-          <grid row="19" column="10" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="5" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <background color="-7021569"/>
-          <borderPainted value="false"/>
-          <contentAreaFilled value="false"/>
-          <enabled value="true"/>
-          <font name="Arial Black" size="14" style="1"/>
-          <foreground color="-16777216"/>
-          <hideActionText value="true"/>
-          <horizontalAlignment value="0"/>
-          <horizontalTextPosition value="4"/>
-          <icon value="Icons/CalculatorButton2.png"/>
-          <inheritsPopupMenu value="false"/>
-          <opaque value="false"/>
-          <pressedIcon value="Icons/CalculatorButton.png"/>
-          <requestFocusEnabled value="false"/>
-          <rolloverEnabled value="false"/>
-          <selected value="false"/>
-          <text value="CALCULAR"/>
-        </properties>
-      </component>
       <component id="2c431" class="javax.swing.JRadioButton" binding="compButton">
         <constraints>
-          <grid row="9" column="1" row-span="1" col-span="6" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="9" column="1" row-span="1" col-span="13" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <background color="-5765889"/>
@@ -390,7 +346,7 @@
       </component>
       <component id="60ccc" class="javax.swing.JTextArea" binding="QuantItenstxt">
         <constraints>
-          <grid row="16" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="18" column="1" row-span="1" col-span="4" vsize-policy="6" hsize-policy="6" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <background color="-5765889"/>
@@ -403,6 +359,33 @@
           <text value="QUANTIDADE DE ITENS:"/>
           <wrapStyleWord value="false"/>
         </properties>
+      </component>
+      <component id="fe3cd" class="javax.swing.JList" binding="mineracao" custom-create="true">
+        <constraints>
+          <grid row="17" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-5765889"/>
+          <focusable value="false"/>
+          <font name="Consolas" size="12"/>
+          <foreground color="-16777216"/>
+          <model>
+            <item value="Mineração"/>
+            <item value="Mais de 250"/>
+            <item value="Mais de 600"/>
+            <item value="Mais de 1000"/>
+          </model>
+          <selectionBackground color="-6875"/>
+          <selectionForeground color="-11908534"/>
+          <selectionMode value="0"/>
+          <valueIsAdjusting value="false"/>
+        </properties>
+      </component>
+      <component id="f7bda" class="javax.swing.JSeparator">
+        <constraints>
+          <grid row="16" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
       </component>
       <component id="453ae" class="javax.swing.JList" binding="peitoral" custom-create="true">
         <constraints>
@@ -435,7 +418,7 @@
       </component>
       <component id="acc25" class="javax.swing.JList" binding="calca" custom-create="true">
         <constraints>
-          <grid row="11" column="5" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="11" column="4" row-span="1" col-span="2" vsize-policy="6" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <background color="-5765889"/>
@@ -454,6 +437,39 @@
           <selectionMode value="0"/>
         </properties>
       </component>
+      <component id="fb89d" class="javax.swing.JTextField" binding="QuantItens">
+        <constraints>
+          <grid row="18" column="5" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="9" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="45" height="15"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-1"/>
+          <columns value="0"/>
+          <editable value="true"/>
+          <enabled value="true"/>
+          <font name="Consolas" size="12"/>
+          <foreground color="-16777216"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="49e70" class="javax.swing.JComboBox" binding="QItemInv">
+        <constraints>
+          <grid row="18" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-1"/>
+          <editable value="false"/>
+          <font name="Consolas" size="12"/>
+          <foreground color="-16777216"/>
+          <model>
+            <item value="Unidade"/>
+            <item value="Inventário"/>
+            <item value="Baú"/>
+            <item value="Baú duplo"/>
+          </model>
+        </properties>
+      </component>
       <component id="40d76" class="javax.swing.JList" binding="bota" custom-create="true">
         <constraints>
           <grid row="11" column="6" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
@@ -469,26 +485,35 @@
             <item value="Sem bota"/>
             <item value="1.1x"/>
             <item value="1.3x"/>
+            <item value="1.4x"/>
           </model>
           <selectionBackground color="-6875"/>
           <selectionForeground color="-11908534"/>
           <selectionMode value="0"/>
         </properties>
       </component>
-      <component id="fb89d" class="javax.swing.JTextField" binding="QuantItens">
+      <component id="5bd8f" class="javax.swing.JButton" binding="calcular">
         <constraints>
-          <grid row="16" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="9" fill="0" indent="0" use-parent-layout="false">
-            <minimum-size width="45" height="15"/>
-          </grid>
+          <grid row="21" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="5" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <background color="-1"/>
-          <columns value="0"/>
-          <editable value="true"/>
+          <background color="-7021569"/>
+          <borderPainted value="false"/>
+          <contentAreaFilled value="false"/>
           <enabled value="true"/>
-          <font name="Consolas" size="12"/>
+          <font name="Arial Black" size="14" style="1"/>
           <foreground color="-16777216"/>
-          <text value=""/>
+          <hideActionText value="true"/>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="4"/>
+          <icon value="Icons/CalculatorButton2.png"/>
+          <inheritsPopupMenu value="false"/>
+          <opaque value="false"/>
+          <pressedIcon value="Icons/CalculatorButton.png"/>
+          <requestFocusEnabled value="false"/>
+          <rolloverEnabled value="false"/>
+          <selected value="false"/>
+          <text value="CALCULAR"/>
         </properties>
       </component>
     </children>

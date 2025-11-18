@@ -21,6 +21,7 @@ public class Controller {
             }
             return result;
         }
+
         if (button && (item.contains("MINERIO") || item.contains("LINGOTE") || item.equals("REDSTONE        |"))) {
             compButton.setSelected(false);
             JOptionPane.showMessageDialog(null, "Esse item não pode ser compactado");
@@ -61,6 +62,7 @@ public class Controller {
         SUFIXOS_MAP.put("T", 4);
         SUFIXOS_MAP.put("Q", 5);
         SUFIXOS_MAP.put("QQ", 6);
+        SUFIXOS_MAP.put("S", 7);
         //
         SUFIXOS_MAP.put("k", 1);
         SUFIXOS_MAP.put("m", 2);
@@ -68,19 +70,10 @@ public class Controller {
         SUFIXOS_MAP.put("t", 4);
         SUFIXOS_MAP.put("q", 5);
         SUFIXOS_MAP.put("qq", 6);
+        SUFIXOS_MAP.put("s", 7);
     }
 
     public static long Quantitens(String QuantItens) {
-        switch (QuantItens.toLowerCase()) {
-            case "bau":
-                return 1728;
-            case "baú":
-                return 1728;
-            case "inv":
-                return 2304;
-            case "inventario":
-                return 2304;
-        }
         if (QuantItens.isEmpty()) {
             return 1;
         }
@@ -102,7 +95,6 @@ public class Controller {
                 return baseValue * multiplier;
             }
         }
-
         return Long.parseLong(QuantItens);
     }
 

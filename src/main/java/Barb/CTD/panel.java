@@ -33,6 +33,7 @@ public class panel {
     private JTextPane Total;
     private JRadioButton compButton;
     private JTextField QuantItens;
+    private JComboBox QItemInv;
 
     private void createUIComponents() {
         capacete = new JList();
@@ -71,7 +72,7 @@ public class panel {
                             skill(getHerbalismo(), getMineracao()),
                             getBolsa(),
                             getPresidente(),
-                            getBooster(), getCompButton(), String.valueOf(Controller.Quantitens(getQuantItens())));
+                            getBooster(), getCompButton(), getQitenInv() ,String.valueOf(Controller.Quantitens(getQuantItens())));
                     String totF = String.format("%.0f", tot);
                     String Formattot = Controller.FormatTotal(totF, tot);
                     Total.setText(Formattot);
@@ -158,6 +159,10 @@ public class panel {
     public String getQuantItens() {
         String quantItens = QuantItens.getText();
         return (quantItens != null) ? quantItens : "";
+    }
+    public String getQitenInv(){
+        String qitenInv = QItemInv.getSelectedItem().toString();
+        return qitenInv;
     }
 
 }
