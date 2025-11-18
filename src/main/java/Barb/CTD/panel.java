@@ -75,7 +75,7 @@ public class panel {
                             getBooster(), getCompButton(), getQitenInv() ,String.valueOf(Controller.Quantitens(getQuantItens())));
                     String totF = String.format("%.0f", tot);
                     String Formattot = Controller.FormatTotal(totF, tot);
-                    Total.setText(Formattot);
+                    Total.setText("TOTAL: " + Formattot);
                     Total.setForeground(new Color(0, 0, 0));
                     Total.setFont(new Font("Consolas", Font.BOLD, 20));
 
