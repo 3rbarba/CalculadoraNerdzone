@@ -34,6 +34,7 @@ public class panel {
     private JRadioButton compButton;
     private JTextField QuantItens;
     private JComboBox QItemInv;
+    private JLabel ByTxt;
 
     private void createUIComponents() {
         capacete = new JList();
