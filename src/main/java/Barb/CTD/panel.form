@@ -374,6 +374,7 @@
             <item value="Mais de 250"/>
             <item value="Mais de 600"/>
             <item value="Mais de 1000"/>
+            <item value="Mais de 1400"/>
           </model>
           <selectionBackground color="-6875"/>
           <selectionForeground color="-11908534"/>

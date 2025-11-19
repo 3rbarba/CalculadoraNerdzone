@@ -214,6 +214,9 @@ public class preco {
             case "Mais de 1000":
                 skillM += 10;
                 break;
+            case "Mais de 1400":
+                skillM += 15;
+                break;
             default:
                 skillM = 0;
         }
