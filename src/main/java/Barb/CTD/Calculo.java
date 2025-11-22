@@ -30,6 +30,7 @@ public class Calculo {
         if(compButton) total = total * 64;
         total = total * Double.parseDouble(QuantItem);
         total = total * Long.parseLong(qitenInv);
+        System.out.println(total);
         return total;
     }
 }

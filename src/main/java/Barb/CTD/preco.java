@@ -11,20 +11,17 @@ public class preco {
         // Preço base do item
         switch (item) {
             case "MINERIO DE OURO |":
-                precoBase = 6;
+                precoBase = 18;
                 break;
             case "LINGOTE DE OURO |":
-                precoBase = 18.4;
+                precoBase = 55.199;
                 break;
                 //Bloco é *1.103
             case "BLOCO DE OURO   |":
-                precoBase =182.65;
-                break;
-            case "OURO COMP.      |":
-                precoBase = 5843.2;
+                precoBase =555.8999;
                 break;
             case "REDSTONE        |":
-                precoBase = 6.75;
+                precoBase = 15.689;
                 break;
             case "BLOCO DE RED    |":
                 precoBase = 60.75;
@@ -33,13 +30,13 @@ public class preco {
                 precoBase = 3;
                 break;
             case "CACTO           |":
-                precoBase = 10.5;
+                precoBase = 33.5;
                 break;
             case "ABÓBORA         |":
                 precoBase = 180;
                 break;
             case "CACAU           |":
-                precoBase = 10;
+                precoBase = 40;
                 break;
             case "CABEÇA DE GAL.  |":
                 precoBase = 4;
@@ -48,13 +45,13 @@ public class preco {
                 precoBase = 26;
                 break;
             case "CABEÇA DE OVELHA|":
-                precoBase = 45;
+                precoBase = 90;
                 break;
             case "CABEÇA DE VACA  |":
-                precoBase = 270;
+                precoBase = 630;
                 break;
             case "CABEÇA DE ZUMBI |":
-                precoBase = 3000;
+                precoBase = 7500;
             break;
             default:
                 precoBase = 0;
